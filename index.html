@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="theme-toggle" class="theme-btn">🌙</button></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-welcome">Welcome to my space</span>
+                <h1>Hi, I'm <span class="highlight-text">Dilys Joy</span></h1>
+                <h2>Full-Stack Software Developer</h2>
+                <p>
+                    Building robust desktop, web, and mobile ecosystems. Turning complex backend operational logic and workflows into clean, human-centric software.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="cta-btn primary-cta">View My Work</a>
+                    <a href="assets/my-cv.pdf" download class="cta-btn secondary-cta">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="window-title">dilys_joy.py</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="keyword">class</span> <span class="class-name">Developer</span>:
+    <span class="keyword">def</span> <span class="method-name">__init__</span>(self):
+        self.name = <span class="string">"Dilys Joy"</span>
+        self.role = <span class="string">"Full-Stack Engineer"</span>
+        self.skills = [<span class="string">"Python"</span>, <span class="string">"C#"</span>, <span class="string">"Flutter"</span>]
+
+    <span class="keyword">def</span> <span class="method-name">build_solution</span>(self):
+        <span class="keyword">return</span> <span class="string">"Turning ideas into production code 🔥"</span></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-visual">
+                <div class="profile-card-mock">
+                    <img src="assets/dilys-profile.jpeg" alt="Dilys Joy" class="profile-image">
+                    <div class="experience-badge">
+                        <span>Full-Stack</span>
+                        <p>Developer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="about-lead">
+                    I am a results-driven Full-Stack Software Developer specializing in transforming complex operational workflows into clean, secure, and highly efficient applications. 
+                </p>
+                <p>
+                    With strong technical foundations across both desktop and mobile web ecosystems, I bridge the gap between robust backend engineering and intuitive frontend design. I focus heavily on writing modular, enterprise-ready code, setting up structured data architectures, and implementing secure role-based workflows.
+                </p>
+
+                <div class="about-pillars">
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <div>
+                            <h4>Full-Stack Architecture</h4>
+                            <p>Experienced in structuring scalable MVC environments and database-driven solutions.</p>
+                        </div>
+                    </div>
+                    <div class="pillar-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Secure Logic & RBAC</h4>
+                            <p>Focused on writing robust authentication wrappers and multi-tier user workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div>
+                    <h3>Student Management Information System</h3>
+                    <p>A web-based academic and administrative platform featuring student profile tracking, unit registration, and dynamic academic reporting. Built with secure authentication workflows (ASP.NET Identity), role-based access control, and AJAX-powered dashboards for fluid system responsiveness.</p>
+                    <div class="project-tech">
+                        <span>C#</span> <span>ASP.NET Core MVC</span> <span>Entity Framework</span> <span>SQL Server</span> <span>AJAX</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Joy-dilys" target="_blank" class="proj-btn repo-btn">
+                        <i class="fa-brands fa-github"></i> Code Repository
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div>
+                    <h3>Clinical & Home Healthcare Platform</h3>
+                    <p>A comprehensive healthcare platform designed to manage patient vitals, clinical records, and scheduling workflows. Built to emulate enterprise-grade operational standards with secure backend logic and structured data management.</p>
+                    <div class="project-tech">
+                        <span>Python</span> <span>Flask</span> <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://homehealthcare.hopto.org/" target="_blank" class="proj-btn live-btn">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                    </a>
+                    <a href="https://github.com/Joy-dilys" target="_blank" class="proj-btn repo-btn">
+                        <i class="fa-brands fa-github"></i> Code
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Bill Payment & Amenities Ordering System</h3>
+                    <p>A digital property and facility management platform designed for seamless service requests and billing. Engineered robust backend APIs for transaction processing, dynamic order management, and database-driven tracking workflows for customer interactions.</p>
+                    <div class="project-tech">
+                        <span>Python</span> <span>Flask</span> <span>SQL Databases</span> <span>JavaScript</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Joy-dilys" target="_blank" class="proj-btn repo-btn">
+                        <i class="fa-brands fa-github"></i> Code Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Laundry Service Management Platform</h3>
+                    <p>A full-stack mobile marketplace connecting users with localized service providers. Features dedicated client and business workflows—including service catalogs, document verification for provider onboarding, order tracking, and an architecture built for maps and real-time messaging scaling.</p>
+                    <div class="project-tech">
+                        <span>Flutter</span> <span>Python</span> <span>Flask</span> <span>SQLite</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Joy-dilys" target="_blank" class="proj-btn repo-btn">
+                        <i class="fa-brands fa-github"></i> Code Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Point of Sale (POS) & Inventory System</h3>
+                    <p>A front-end retail operations platform featuring CRM capabilities and ERP-style order history tracking. Implemented browser-based storage architectures to power real-time sales analytics dashboards, supplier relations management, and automated stock replenishment monitoring.</p>
+                    <div class="project-tech">
+                        <span>HTML & CSS</span> <span>JavaScript</span> <span>Browser Storage</span>
+                    </div>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Joy-dilys" target="_blank" class="proj-btn repo-btn">
+                        <i class="fa-brands fa-github"></i> Code Repository
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML & CSS</li>
+            <li>JavaScript & AJAX</li>
+            <li>Flutter (Dart)</li>
+            <li>Python (Flask)</li>
+            <li>C# (ASP.NET Core)</li>
+            <li>Entity Framework</li>
+            <li>SQL Server, MySQL & SQLite</li>
+        </ul>
+    </section>
+
+   <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <form action="https://formspree.io/f/xbdvddyz" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Full Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="_replyto" required placeholder="email@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Write what you think about me"></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Dilys Joy. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/Joy-dilys" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/dilys-joy-008244419" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
