@@ -680,107 +680,165 @@ footer {
 /* Mobile Adaptations for Hero Section */
 /* --- COMPREHENSIVE MOBILE RESPONSIVENESS --- */
 @media (max-width: 768px) {
-    /* Reduce global section padding so content doesn't squeeze */
+    /* Tighten section spaces globally to match desktop proportions */
     section {
-        padding: 4rem 5%;
+        padding: 2.5rem 4%;
     }
 
-    /* Collapse Navigation into a stacked layout or adjust spacing */
+    /* Compact Navigation Bar */
     nav {
         flex-direction: column;
-        gap: 15px;
-        padding: 1rem 5%;
+        gap: 10px;
+        padding: 0.8rem 4%;
         text-align: center;
     }
 
     nav ul {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 4px;
+        padding: 0;
     }
 
     nav ul li {
-        margin: 5px 10px;
+        margin: 4px 8px;
+    }
+    
+    nav ul li a {
+        font-size: 0.85rem; /* Smaller menu links */
     }
 
-    /* Hero Section Mobile Fixes */
+    /* Hero Section Scale-Down */
     .hero-container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 40px;
+        gap: 20px; /* Reduced massive gaps */
     }
 
     .hero-content h1 {
-        font-size: 2.4rem;
+        font-size: min(7.5vw, 2.0rem); /* Fluid sizing locks text beautifully to screen width */
+        line-height: 1.2;
+        margin-bottom: 8px;
     }
 
     .hero-content h2 {
-        font-size: 1.4rem;
+        font-size: min(4.8vw, 1.2rem); /* Scaled proportionally below the name */
+        margin-bottom: 12px;
     }
 
     .hero-content p {
-        font-size: 1rem;
-        margin: 0 auto 25px auto;
+        font-size: 0.88rem; /* Cleaner, tighter paragraph size */
+        line-height: 1.5;
+        margin: 0 auto 20px auto;
+        max-width: 92%;
     }
 
+    /* Keeps action buttons horizontal and compact like desktop */
     .hero-actions {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
         width: 100%;
-        gap: 12px;
+        gap: 10px;
     }
 
     .hero-actions .cta-btn {
-        width: 100%;
-        text-align: center;
+        width: auto;
+        padding: 10px 16px;
+        font-size: 0.82rem;
     }
 
     .hero-visual {
         justify-content: center;
     }
 
+    /* Shrinks code workspace text to fit completely without breaking */
     .code-window {
         max-width: 100%;
     }
+    
+    .code-body pre {
+        font-size: 0.72rem;
+        line-height: 1.4;
+    }
 
-    /* About Section Mobile Fixes */
+    /* About Section Scale-Down */
     .about-container {
         grid-template-columns: 1fr;
-        gap: 35px;
+        gap: 25px;
+    }
+    
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-content p {
+        font-size: 0.88rem;
     }
 
     .profile-card-mock {
-        width: 240px;
-        height: 280px;
+        width: 190px; /* Scaled down thumbnail framing */
+        height: 230px;
+        margin: 0 auto;
     }
 
     .experience-badge {
         right: -5px;
-        bottom: -10px;
-        padding: 8px 16px;
+        bottom: -5px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
     }
 
-    /* Projects Grid Mobile Fixes */
+    /* Projects Grid Tight Layout */
     .project-grid {
-        grid-template-columns: 1fr; /* Forces cards to stack single-file */
-        gap: 20px;
+        grid-template-columns: 1fr; 
+        gap: 15px;
     }
 
     .project-card {
-        padding: 25px;
+        padding: 18px; /* Tighter internal padding */
+    }
+    
+    .project-card h3 {
+        font-size: 1.15rem;
     }
 
+    .project-card p {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .project-tech span {
+        font-size: 0.72rem;
+        padding: 2px 6px;
+    }
+
+    /* Keeps multiple project links side-by-side like the desktop layout */
     .project-links {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        gap: 8px;
     }
 
     .project-links .proj-btn {
-        width: 100%;
+        width: auto;
+        flex: 1;
+        font-size: 0.78rem;
+        padding: 8px 10px;
         justify-content: center;
     }
 
-    /* Contact Form Mobile Fixes */
+    /* Contact Form Compact Adjustments */
     .contact-container {
-        padding: 25px;
-        margin: 1.5rem 0 0 0;
+        padding: 20px;
+        margin: 1rem 0 0 0;
+    }
+    
+    .form-group label {
+        font-size: 0.82rem;
+    }
+    
+    .form-group input, 
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.85rem;
     }
 }
