@@ -2,6 +2,19 @@
 /* Import a premium modern font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+/* 1. FORCE THE VIEWPORT TO BE CAPPED AT 100% WIDTH AND BAN HORIZONTAL SCROLLING */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* 2. ENSURE ALL ELEMENTS ADJUST INSIDE TARGET WRAPPERS */
+img, video, pre, code {
+    max-width: 100%;
+}
+
 :root {
     --primary: #2563eb;       /* Modern Electric Blue */
     --secondary: #0f172a;     /* Deep Slate/Dark Navy */
@@ -521,9 +534,12 @@ footer {
 /* --- CREATIVE HERO SECTION --- */
 .hero-section {
     padding: 6rem 10% 8rem 10%;
+    background: #0f172a; /* Clean solid fallback match */
     background: radial-gradient(circle at top right, #1e293b, #0f172a);
     color: white;
+    width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
 }
 
 .hero-container {
